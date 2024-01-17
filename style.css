@@ -1,0 +1,784 @@
+ @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@700&family=Roboto:ital,wght@0,100;0,300;0,500;0,700;1,500&display=swap');
+ @import url('https://fonts.googleapis.com/css2?family=Sarina&display=swap');
+
+ * {
+     margin: 0;
+     padding: 0;
+ }
+ html{
+    scroll-behavior: smooth;
+ }
+ nav {
+     display: flex;
+     justify-content: space-between;
+     align-items: center;
+     flex-wrap: wrap;
+     height: 64px;
+     background-color: #ebebeb;
+     z-index: 999;
+     position: sticky;
+     top: 0;
+     left: 0;
+ }
+ nav #logo{
+    padding-left: 100px;
+    width: 200px;
+ }
+ nav ul li a{
+    color: #51068B;
+    text-decoration: none;
+    font-size: 18px;
+    position: relative;
+ }
+ nav ul li a::after{
+    content: '';
+    width: 0;
+    height: 3px;
+    background: #e12047;
+    position: absolute;
+    left: 0;
+    bottom: -6px;
+    transition: 0.3s;
+ }
+ nav ul li a:hover::after{
+    width: 100%;
+ }
+
+ nav li {
+     display: inline-block;
+     list-style: none;
+     font-size: 20px;
+     padding-right: 90px;
+     font-family: 'Roboto', sans-serif;
+ }
+
+ nav li #product {
+     border: 2px solid black;
+ }
+
+ /* Home Section*/
+
+ #home {
+     background-color: #ebebeb;
+     display: flex;
+     justify-content: space-between;
+ }
+
+ .hcont1 {
+     padding: 140px 100px;
+     color: #51068B;
+ }
+
+ .hcont1 h1 {
+     font-size: 55px;
+     font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+     line-height: 65px;
+ }
+
+ .hcont1 p {
+    font-size: 16px;
+    font-family: Arial, Helvetica, sans-serif;
+    line-height: 28px;
+    padding-top: 16px;
+    width: 515px;
+}
+
+ .hcont2 {
+     display: flex;
+     align-items: center;
+     justify-content: center;
+     flex-direction: column;
+     padding: 65px 80px;
+ }
+
+ .btn {
+     width: 95px;
+     height: 45px;
+     background-color: #51068B;
+     color: whitesmoke;
+     border: none;
+     border-radius: 5px;
+     cursor: pointer;
+     margin-top: 10px;
+ }
+
+ .btn:hover {
+     background-color: #fd0953;
+     transition: 0.2s;
+ }
+ #span {
+    display: flex;
+    margin-top: 8px;
+}
+ .headphone1 {
+     width: 70px;
+     height: 70px;
+     background-color: #7AE3DB;
+     padding: 5px;
+     display: flex;
+     justify-content: center;
+     align-items: center;
+     margin-right: 15px;
+     border-radius: 12px;
+     cursor: pointer;
+ }
+
+ .headphone2 {
+     width: 70px;
+     height: 70px;
+     background-color: #FBC3D4;
+     padding: 5px;
+     display: flex;
+     justify-content: center;
+     align-items: center;
+     margin-right: 15px;
+     border-radius: 12px;
+     cursor: pointer;
+ }
+
+ .headphone3 {
+     width: 70px;
+     height: 70px;
+     background-color: #7AE3DB;
+     padding: 5px;
+     display: flex;
+     justify-content: center;
+     align-items: center;
+     margin-right: 15px;
+     border-radius: 12px;
+     cursor: pointer;
+ }
+
+ #circle {
+     height: 55px;
+     width: 55px;
+     background-color: #e12047;
+     border-radius: 50%;
+     display: inline-block;
+     margin-left: 156px;
+ }
+
+ #circle p {
+     font-size: 10px;
+     font-weight: bold;
+     color: whitesmoke;
+     padding-top: 1px;
+     padding-left: 18px;
+     width: 10px;
+ }
+
+ #icon {
+     display: flex;
+     margin: 90px 0px 0px 430px;
+ }
+
+ /*.fb {
+     padding-right: 2px;
+ }
+
+ .insta {
+     padding-right: 2px;
+ }
+
+ .tweet {
+     padding-right: 2px;
+ }
+ */
+
+ #para {
+    font-size: 12px;
+     padding-left: 220px;
+     margin-top: 10px;
+     color: #51068B;
+     font-family: Arial, Helvetica, sans-serif;
+ }
+
+ /* About Section*/
+
+ #About{
+     display: flex;
+     justify-content: space-between;
+     padding: 140px 100px
+ }
+ .text{
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+
+ }
+ .text h1{
+    color: #FF004D;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-size: 40px;
+ }
+ #aimg{
+    border-radius: 20px;
+ }
+ .text p {
+    color: #51068B;
+    font-size: 16px;
+    font-family: Arial, Helvetica, sans-serif;
+    padding-top: 30px;
+    width: 600px;
+    line-height: 35px;
+}
+ #color{
+    color: #51068B;
+ }
+
+
+ /* Product Section*/
+
+ 
+#products{
+    background-color: #ebebeb;
+    width: 100%;
+    height: 100%;
+}
+.head{
+    color: #51068B;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-size: 32px;
+    padding-left: 7rem;
+    padding-top: 3rem;
+}
+.p1cont{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 300px;
+    padding: 0rem 7rem;
+}
+.p2cont{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 300px;
+    padding: 0rem 7rem;
+}
+
+.box{
+    width: 200px;
+    height: 225px;
+    background-color: #FFFFFF;
+    color: #51068B;
+    font-family: Arial, Helvetica, sans-serif;
+    border-radius: 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+}
+.box:hover{
+    transition: 0.3s;
+    border: 0.5px solid #8c51b9;
+}
+.box p{
+    padding-top: 10px;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 13px;
+    font-weight: bold;
+}
+#img2{
+    padding: 10px;
+}
+#img3{
+    padding: 11px;
+}
+#img4{
+    padding: 13px;
+}
+#img5{
+    padding: 16px;
+}
+#img6{
+    padding: 14px;
+}
+#img7{
+    padding: 16px;
+}
+#img8{
+    padding: 16px;
+}
+
+
+/* Footer Section*/
+#footer{
+    width: 100%;
+    height: 500px;
+}
+.icon{
+    cursor: pointer;
+}
+.fhead{
+    color: #51068B;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-size: 30px;
+    padding: 4rem 0rem 0rem 7rem;
+}
+.fhead span{
+    font-family: Sarina,sans-serif;
+    color: black;
+}
+.fcont {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 3rem 7rem 0rem 7rem;
+}
+
+.first p{
+    font-size: 18px;
+    font-family: Arial, Helvetica, sans-serif;
+    line-height: 40px;
+    color: #51068B;
+    font-weight: lighter;
+    cursor: pointer;
+}
+.second p{
+    font-size: 18px;
+    font-family: Arial, Helvetica, sans-serif;
+    line-height: 40px;
+    color: #51068B;
+    font-weight: lighter;
+    cursor: pointer;
+}
+.third p{
+    font-size: 18px;
+    font-family: Arial, Helvetica, sans-serif;
+    line-height: 40px;
+    color: #51068B;
+    font-weight: lighter;
+    cursor: pointer;
+}
+.copyright{
+    font-size: 18px;
+    padding: 3rem 7rem 0rem 7rem;
+    color: #51068B;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+nav .fa-solid{
+    display: none;
+}
+
+
+/* Media Query*/
+
+@media(max-width:600px) {
+    body{
+        overflow-x: hidden;
+    }
+    nav .fa-solid{
+        display: block;
+        font-size: 25px;
+        padding-right: 20px;
+        cursor: pointer;
+        color: #51068B;
+    }
+    nav ul{
+        background-color: #51068B;
+        top: 0;
+        right: -150px;
+        position: fixed;
+        height: 100vh;
+        width: 150px;
+        padding-top: 70px;
+        transition: right 0.8s ease 0s;
+
+    }
+    nav ul li{
+        margin: 25px;
+        display: block;
+    }
+    nav ul li a{
+        color: whitesmoke;
+    }
+    nav ul .fa-solid{
+        position: absolute;
+        top: 25px;
+        left: 25px;
+        cursor: pointer;
+    }
+    nav #logo{
+        padding-left: 15px;
+        width: 180px;
+
+    }
+    #home,#About{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+    }
+    .hcont1{
+        padding: 90px 50px;
+    }
+    .hcont1 h1{
+        font-size: 40px;
+    }
+    .hcont1 p{
+        font-size: 14px;
+        width: 400px;
+    }
+    #himg{
+        width: 220px;
+        height: 200px;
+    }
+    .hcont2{
+        padding: 10px;
+    }
+    #icon{
+        margin: 45px 0px 0px 215px;
+    }
+    #para{
+        padding-left: 40px;
+        padding-bottom: 10px;
+        font-size: 10px;
+    }
+    #aimg{
+        width: 280px;
+        height: 360px;
+    }
+    .text h1{
+        margin-top: 20px;
+        text-align: center;
+        font-size: 26px;
+    }
+    .text p{
+        padding-left: 15px;
+        font-size: 14px;
+        width: 475px;
+    }
+    .text .btn{
+        margin-left: 15px;
+    }
+    #products{
+        height: 1150px;
+    }
+    .head{
+        padding: 25px 12px 25px 35px;
+        font-size: 30px;
+    }
+    .pboxes{
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+    .p1cont{
+        display: flex;
+        flex-wrap: wrap;
+        margin-top: 5px;
+        padding: 0px 0px 0px 30px;
+        gap: 30px;
+    }
+    .p2cont{
+        display: flex;
+        flex-wrap: wrap;
+        margin-top: 5px;
+        padding: 0px 0px 0px 30px;
+        gap: 30px;
+    }
+    .fhead{
+        font-size: 25px;
+        padding: 20px 12px;
+    }
+    .fcont{
+        padding: 15px;
+    }
+    .first p{
+        font-size: 14px;
+    }
+    .second p{
+        font-size: 14px;
+    }
+    .third p{
+        font-size: 14px;
+    }
+    .copyright{
+        font-size: 15px;
+        padding: 20px 18px;
+    }
+    .icon{
+        height: 22px;
+        width: 26px;
+    }
+}
+@media (min-width:601px) and (max-width:768px){
+    body{
+        overflow-x: hidden;
+    }
+    nav .fa-solid{
+        display: block;
+        font-size: 25px;
+        padding-right: 20px;
+        color: #51068B;
+    }
+    nav ul{
+        background-color: #5e1b92;
+        top: 0;
+        right: -150px;
+        position: fixed;
+        height: 100vh;
+        width: 150px;
+        padding-top: 70px;
+        transition: 0.8s right;
+        cursor: pointer;
+    }
+    nav ul li{
+        margin: 35px;
+        display: block;
+    }
+    nav ul li a{
+        color: whitesmoke;
+    }
+    nav ul .fa-solid{
+        position: absolute;
+        top: 25px;
+        left: 35px;
+        cursor: pointer;
+    }
+    nav #logo{
+        padding-left: 15px;
+        width: 180px;
+    }
+    #home,#About{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+    }
+    #About{
+        gap: 20px;
+    }
+    .p1cont,.p2cont{
+        padding: 0px 25px;
+        gap: 30px;
+    }
+    .head{
+        padding: 25px 25px 0px;
+    }
+    .text h1{
+        font-size: 38px;
+        text-align: center;
+    }
+    .text p{
+        width: 575px;
+    }
+    .fhead{
+        padding: 30px;
+    }
+    .fcont{
+        padding: 25px 35px;
+    }
+    .first p{
+        font-size: 15px;
+    }
+    .second p{
+        font-size: 15px;
+    }
+    .third p{
+        font-size: 15px;
+    }
+
+    .copyright{
+        padding: 15px 35px;
+        font-size: 16px;
+    }
+}
+
+@media(min-width:768px) and (max-width:991px){
+    body{
+        overflow-x: hidden;
+    }
+    nav #logo{
+        padding-left: 25px;
+    }
+    nav li{
+        padding-right: 30px;
+    }
+    #home{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
+    .hcont1{
+        padding: 140px 50px 90px 50px;
+    }
+    .hcont1 h1{
+        font-size: 58px;
+    }
+    .hcont1 p{
+        width: 700px;
+    }
+    #About{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        gap: 30px;
+    }
+    #aimg{
+        height: 550px;
+    }
+    .text h1{
+        font-size: 38px;
+        text-align: center;
+    }
+    .text p{
+        font-size: 14px;
+        width: 700px;
+    }
+    .head{
+        padding: 30px 40px 0px 40px;
+    }
+    .p1cont,.p2cont{        
+        padding: 5px 35px 10px 40px;
+        gap: 20px;
+    }
+    .fhead{
+        padding: 40px 20px 10px 40px;
+    }
+    .fcont{
+        padding: 25px 45px;
+    }
+    .first p{
+        font-size: 15px;
+    }
+    .second p{
+        font-size: 15px;
+    }
+    .third p{
+        font-size: 15px;
+    }
+
+    .copyright{
+        padding: 10px 42px;
+        font-size: 16px;
+    }
+}
+
+@media(min-width:992px) and (max-width:1199px){
+    body{
+        overflow-x: hidden;
+    }
+    nav #logo{
+        padding-left: 30px;
+    }
+    nav li{
+        padding-right: 50px;
+    }
+    .hcont1{
+        padding: 140px 50px 70px;
+    }
+    .hcont1 h1{
+        font-size: 50px;
+    }
+    .hcont1 p{
+        font-size: 14px;
+        width: 470px;
+    }
+    .hcont2{
+        padding: 120px 30px;
+    }
+    #icon{
+        margin: 90px 0px 0px 250px;
+    }
+    #para{
+        padding-left: 30px;
+    }
+    #About{
+        padding: 140px 50px 70px;
+        gap: 40px;
+    }
+    #aimg{
+        height: 530px;
+        width: 380px;
+    }
+    .text h1{
+        font-size: 35px;
+    }
+    .text p{
+        font-size: 14px;
+        width: 500px;
+    }
+    .head{
+        padding: 20px 50px 0px;
+    }
+    .p1cont,.p2cont{
+        padding: 0px 50px;
+    }
+    .fhead{
+        padding: 45px 50px 10px;
+    }
+    .fcont{
+        padding: 30px 60px;
+    }
+    .copyright{
+        padding: 30px 60px;
+    }
+}
+
+@media(min-width:1200px) and (max-width:1500px){
+    body{
+        overflow-x: hidden;
+    }
+    nav #logo{
+        padding-left: 40px;
+    }
+    nav li{
+        padding-right: 60px;
+    }
+    .hcont1{
+        padding: 140px 70px 70px;
+    }
+    .hcont1 h1{
+        font-size: 50px;
+    }
+    .hcont1 p{
+        font-size: 14px;
+        width: 470px;
+    }
+    .hcont2{
+        padding: 120px 30px;
+    }
+    #icon{
+        margin: 90px 0px 0px 250px;
+    }
+    #para{
+        padding-left: 30px;
+    }
+    #About{
+        padding: 140px 50px 70px;
+        gap: 30px;
+    }
+    #aimg{
+        height: 530px;
+        width: 380px;
+    }
+    .text h1{
+        font-size: 35px;
+    }
+    .text p{
+        font-size: 14px;
+        width: 600px;
+    }
+    .head{
+        padding: 20px 50px 0px;
+    }
+    .p1cont,.p2cont{
+        padding: 0px 50px;
+    }
+    .fhead{
+        padding: 45px 50px 10px;
+    }
+    .fcont{
+        padding: 30px 60px;
+    }
+    .copyright{
+        padding: 30px 60px;
+    }
+}
+    
